@@ -37,11 +37,11 @@ https://css-tricks.com/snippets/css/clear-fix/
 /*Estilo geral*/
 html{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em; /*modificacao 1*/
+    font-size: 1.125em; /*18px/16*/
 }
 
 p{
-    font-size: 1em; /*modificacao 2*/
+    font-size: 1em; /*16px/16*/
 }
 
 a{
@@ -57,7 +57,7 @@ a{
 /*Layout*/
 body{
     background-color: #fff;
-    width: 100%; /*modificacao 3 980px;*/
+    width: 100%; /*980px;*/
     margin: 0 auto
 }
 
@@ -66,7 +66,7 @@ body{
 }
 
 #content section{
-    padding: 10% 0; /*100px 0*/  
+    padding: 10.2% 0; /*100px/980 0*/  
 }
 
 #header,#footer{
@@ -75,7 +75,7 @@ body{
 }
 
 #header{
-   width: 100%;/*modificacao 4 980px;*/
+   width: 100%; /*980px;*/
    position: fixed;
    z-index: 100;
    top: 0
@@ -83,12 +83,12 @@ body{
 
 #header h1{
     float: left;
-    padding: 1.2%; /*12px*/
+    padding: 1.224%; /*12px/980*/
 }
 
 #main-nav{
     float: right;
-    padding: 2.25%; /*22.5px*/
+    padding: 2.295%; /*22.5px/980*/
 }
 
 #main-nav ul li{
@@ -96,7 +96,7 @@ body{
 }
 
 #main-nav a{
-    padding: 1.5%; /*15px;*/
+    padding: 1.530%; /*15px/980;*/
     color: #fff
 }
 
@@ -120,26 +120,26 @@ img{
 #home p{
     line-height: 1.5;
     float: right;
-    width: 40%;/* modificacao 5 400px*/
+    width: 40.80%; /*400px/980*/
 }
 
 /*Portfolio*/
 
 #portfolio figure{
     float: left;
-    max-width: 32%; /* ??????????????320px /980;*/
+    max-width: 32.65%; /*320px/980;*/
     padding: 1%;
 }
 
 #portfolio img{
-    width: 93%; /* ????????????? 300px/320 /*/
+    width: 93.75%; /*300px/320 /*/
 }
 
 /*Sobre*/
 
 #sobre p{
     display: inline-block;
-    width: 46%; /*450px;*//*????????????????*/
+    width: 45.91%; /*450px/980*/
     line-height: 1.5;
     margin: 0 0 30px 30px;
 }
@@ -148,19 +148,10 @@ img{
 
 #footer p{
     text-align: center;
-    padding: 30px
+    padding: 3.06%; /*30px*/
 }
 
 @media all and (max-width: 910px){
-
-/*primeiro teste*/
-/*#home p{
-        clear: both;
-        width: auto;
-        background-color: red;
-    }*/
-    
-/* teste elton  */
 
 #home figure,
 #home p {
@@ -171,13 +162,12 @@ img{
 #home figure{
     display: block;
 }
-    
-
 
 }
 
 @media all and (max-width: 960px){
-  section#sobre{
+
+section#sobre{
     clear: both;
 }  
 }
